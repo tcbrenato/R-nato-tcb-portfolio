@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.navbar {
+    background-color: white;
+}
+
+.navbar-nav .nav-link {
+    color: #195885;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #195885;
+}
+
+.jumbotron {
+    background-color: #195885; /* Bleu saphir */
+    color: white;
+}
+
+.about, .services, .contact {
+    background-color: white;
+    color: #195885;
+}
+
+.skills, .projects {
+    background-color: #195885;
+    color: white;
+}
+
+footer {
+    background-color: #195885;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+.btn-cv {
+    background-color: #195885; /* Couleur de fond initiale */
+    color: white;
+    border-radius: 12px; /* Coins arrondis */
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Transition pour le changement de couleur */
+}
+
+.btn-cv:hover {
+    background-color: #195885; /* Couleur de fond au survol */
+    text-decoration: none;
+    color: white;
+}
+
+/* Style de la barre d'information */
+.flash-info {
+    background-color: hsl(64, 91%, 50%); /* Couleur de fond */
+    color: #195885; /* Couleur du texte */
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    z-index: 1000;
+    overflow: hidden; /* Masque le texte qui dépasse du conteneur */
+    margin-top: 56px; /* Hauteur de la barre de navigation pour éviter le chevauchement */
+}
+
+.scrolling-text {
+    white-space: nowrap; /* Empêche le texte de se briser en plusieurs lignes */
+    display: inline-block; /* Permet l'animation */
+    padding-left: 100%; /* Positionne le texte à droite de la vue */
+    animation: scroll-left 40s linear infinite; /* Définit l'animation */
+}
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(100%); /* Démarre le texte à droite */
+    }
+    to {
+        transform: translateX(-100%); /* Déplace le texte à gauche */
+    }
+}
+
